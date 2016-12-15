@@ -1,0 +1,42 @@
+html,body,header,nav,aside,article,section,div,footer,ul,li{
+    margin:0px;
+    padding:0px;
+    display: block;
+}
+body{
+    font-family: sans-serif;
+        background-image: url("img/web2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#wrapper{
+    width:100%;
+    text-align: center;
+}
+header{
+    padding:10px;
+    background-color: rgba(16, 31, 134, 0.66);
+    color:white;
+    border-bottom: 10px solid black;
+  border-image: repeating-linear-gradient(
+       50deg, black 1%, gray 5%, rgba(16, 31, 134, 0.66) 3%, rgba(16, 31, 145, 0.66) 9%) 10;
+}
+h1,h2{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 2em;
+    
+}
+h6{
+    color:#f7d7db;
+    margin:0px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    text-align: right;
+    font-weight: 100;
+}
+h1 img{
+    width:2.5%;
+    height: 2.5%;
+}
