@@ -121,6 +121,9 @@ h1 img{
               padding:12px 63.5px;
 
         }
+        .actve:active{
+            background-color:gray;
+        }
 
 
 
