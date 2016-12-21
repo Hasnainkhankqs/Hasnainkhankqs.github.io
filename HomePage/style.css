@@ -124,7 +124,14 @@ h1 img{
         .actve:active{
             background-color:gray;
         }
-
+article{
+    width:50%;
+    font-size: 50px;
+    color:gray;
+    background: #444;
+    margin: 0px auto;
+    border: 1px solid black;
+}
 
 
 
