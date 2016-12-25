@@ -1,0 +1,252 @@
+body{
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+    background-color:#e9ebee;
+        font-family: Helvetica, Arial, sans-serif;
+
+}
+#wrapper{
+    width:100%;
+    background-color:#e9ebee;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width:100%;
+    float: left;
+    background-image: linear-gradient(#4a66a0,#133783);
+    color:white;
+    padding-top:20px;
+    /*height: 82px;*/
+    
+}   
+header>h1{
+    float: left;
+    margin:0px;
+    padding: 0px;
+    margin-left:20px;
+    margin-top:7px;
+    font-size: 42px;
+}
+form{
+    padding-right:40px;
+    float: right;
+    padding-bottom: 4px;
+}
+form>label{
+    font-size:14px;
+}
+#semail{
+    float: left;
+    margin-right:10px;
+    font-size: 12px;
+    
+}
+#spassrd{
+    float: left;
+    font-size: 12px;
+}
+button{
+    margin-top:17px;
+    margin-left: 10px;
+    font-size: 14px;
+    background: #4a66a0;
+    border:0px;
+    color:white;
+    padding: 3px 10px;
+}
+button:hover{
+    background-color: #133783;
+    cursor: pointer;
+}
+#paswrd{
+    margin:4px 0px;
+}
+#email{
+    margin:4px 0px;
+}
+a{
+    color:#5b76b5;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#new{
+    float: right;
+    margin-top:20px;
+}
+#new>h2{
+    font-size: 19px;
+    font-weight: normal;
+}
+#new>h1{
+    font-size: 36px
+}
+
+#new>h1,#new>h2{
+    margin: 0px;    
+    color:#333;
+}
+#signup>input{
+   padding: 8px 10px;
+   border-radius:5px ;
+   border: 1px solid #bdc7d8;
+   font-size: 18px;
+   margin: 0px 10px 10px 0px;
+
+}
+
+#pswrd,#emailup,#remail{
+    width:376px;
+}
+#fname,#surname{
+    width: 172px;
+}
+form#signup p{
+    margin:0px;
+    padding: 0px;
+    clear: both;
+    width:330px;
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 21px;
+}
+label[for="female"],label[for="male"],label[for="birth"]{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+select{
+    font-size: 13px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #bdc7d8;
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+    margin:-2px;
+}
+input[type="submit"]{
+    background-image: linear-gradient(#67ae55, #578843);
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+     border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+        min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+        font-weight: bold ;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+        font-size: 19px;
+
+}
+input[type="submit"]:hover{
+    background: linear-gradient(#79bc64, #578843);
+}
+#why  {
+    font-size: 11px;
+    width: 150px;
+    left: 10px;
+    top:5px;
+    position: relative;
+    display: inline-block;
+}
+#create{
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;  
+    padding-top:15px;
+
+}
+footer{
+    clear: both;
+    background-color:white;
+    font-size: 12px;
+    padding:3px;
+    padding-bottom:29px;
+}
+footer a {
+    margin-left:10px;
+}
+footer button{
+     background-color: #f6f7f9;
+    border:1px solid #ced0d4;
+    color: #4b4f56;
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 1px 11px;
+
+
+}
+footer button:hover{
+        background-color: #e9ebee;
+}
+hr{
+    border: 1px solid #dddfe2;
+}
+#links{
+    width:800px;
+    display: inline-block;
+}
+#links a{
+
+     margin:10px;
+}
+#last{
+    display: block;
+    margin-top:20px;
+    font-size: 11px;
+    color: #737373;;
+}
+#eng{
+    color: #737373;
+    text-decoration: none;
+}
+#eng:hover{
+    color: #737373;
+    text-decoration: none;
+    cursor: text;
+}
+#pic{
+    float: left;
+    margin-left:10%;
+    text-align: center;
+}
+#pic img{
+    border:6px solid white;
+    cursor: pointer;
+    margin-left: -40px
+}
+#cancel{
+    border-radius: 100px;
+    background-color: white;
+    color:#7d7d7d;
+    font-weight: bold;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    bottom: 132px;
+    left:122px;
+
+
+}
+#img:hover #cancel{
+    color: green;
+    
+}
+#hasnain{
+    color:#777;
+    font-size: 22px;
+}

@@ -127,10 +127,12 @@ h1 img{
 article{
     width:50%;
     font-size: 50px;
-    color:gray;
-    background: #444;
-    margin: 0px auto;
+    color:#7d7d7d;
+    background: rgba(10,10,10,0.9);
+    margin: 5px auto;
     border: 1px solid black;
+    float: left;
+    margin-left: 25%;
 }
 
 
