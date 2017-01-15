@@ -57,12 +57,12 @@ h1 img{
 
 /*practiced*/
 
-        nav{
-            float: left;
-            position: relative;
-            width:100%;
-            background-color:rgba(3, 169, 244, 0.73);
-        }
+nav{
+    float: left;
+     position: relative;
+    width:100%;
+    background-color:rgba(3, 169, 244, 0.73);
+ }
         nav>ul{
             float:left;
             padding: 0px;
@@ -97,8 +97,7 @@ h1 img{
         background: rgb(45, 44, 44);
         color:#fff;
         }
-        nav>ul>li>div{
-            /*text-align: center;*/
+        #drpdwn{
             z-index: 10;
             position: absolute;
             display:none;
@@ -114,6 +113,7 @@ h1 img{
         }
         #drpbtn:hover #drpdwn{
             display: block;
+            
 
         }
         nav>ul>li>div>a{
@@ -135,141 +135,31 @@ article{
     margin-left: 25%;
 }
 
-
-
-
-
-
-/*#menu, #menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-#menu {
-    margin: 0px auto;
-    border: 1px solid #222;
-    background-color: #111;
-    background-image: linear-gradient(#444, #111);
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    box-shadow: 0 1px 1px #777;
-}
-#menu:before,
-#menu:after {
-    content: "";
-    display: table;
-}
-
-#menu:after {
-    clear: both;
-}
-
-#menu {
-    zoom:1;
-}
-#menu li {
+aside{
     float: left;
-    border-right: 1px solid #222;
-    box-shadow: 1px 0 0 #444;
-    position: relative;
-}
-#menu a {
-    float: left;
-    padding: 12px 30px;
-    color: #999;
-    text-transform: uppercase;
-    font: bold 12px Arial, Helvetica;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #000;
-}
-#menu li:hover > a {
-    color: #fafafa;
-}
-#menu ul {
-    margin: 20px 0 0 0;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 38px;
-    left: 0;
-    z-index: 1;    
-    background: #444;   
-    background: linear-gradient(#444, #111);
-    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
-    border-radius: 3px;
-    transition: all .2s ease-in-out;
-}
-
-#menu li:hover > ul {
-    opacity: 1;
-    visibility: visible;
-    margin: 0;
-}
-
-#menu ul ul {
-    top: 0;
-    left: 150px;
-    margin: 0 0 0 20px;
-    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
-}
-
-#menu ul li {
-    float: none;
-    display: block;
-    border: 0;
-    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
-}
-
-#menu ul li:last-child {   
-    box-shadow: none;    
-}
-
-#menu ul a {    
+    cursor: pointer;
+    margin-top:50px;
+    text-align: center;
     padding: 10px;
-    width: 130px;
-    display: block;
-    white-space: nowrap;
-    float: none;
-    text-transform: none;
+    color:#fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 2px black;
+    box-shadow: 0px 5px 1px #34823b;
+    position: relative;
+    background-image: linear-gradient(#34823b,lightgreen);
+    width:200px;
+    user-select: none;
+    border-radius: 25px;
+    margin-left: 10px;
 }
-
-#menu ul a:hover {
-    background-color: #0186ba;
-    background-image: linear-gradient(#04acec, #0186ba);
+aside:active{
+    box-shadow: none;
+    top:5px;
+    background-image: linear-gradient(lightgreen,#34823b);
 }
-#menu ul li:first-child > a {
-    border-radius: 3px 3px 0 0;
+aside>a{
+    color:#fff;
+text-shadow: 0px 1px 2px black;
+text-decoration: none;
 }
-
-#menu ul li:first-child > a:after {
-    content: '';
-    position: absolute;
-    left: 40px;
-    top: -6px;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid #444;
-}
-
-#menu ul ul li:first-child a:after {
-    left: -6px;
-    top: 50%;
-    margin-top: -6px;
-    border-left: 0; 
-    border-bottom: 6px solid transparent;
-    border-top: 6px solid transparent;
-    border-right: 6px solid #3b3b3b;
-}
-
-#menu ul li:first-child a:hover:after {
-    border-bottom-color: #04acec; 
-}
-
-#menu ul ul li:first-child a:hover:after {
-    border-right-color: #0299d3; 
-    border-bottom-color: transparent;   
-}
-
-#menu ul li:last-child > a {
-    border-radius: 0 0 3px 3px;
-}*/
