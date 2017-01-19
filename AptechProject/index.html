@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liberty Electronics</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"> <!-- container start -->
+        <header>   <!-- Header Started -->
+            <span id="logo">
+                <img src="img/logo.png" alt="Image">
+            </span>
+            <!--<h1 id="heading">
+               Liberty Electronics 
+            </h1>-->
+            <input type="search" placeholder="Search Your Desired Item...!!" autofocus>
+            <input type="Button" value="search" id="searchbtn">
+            <div id="rightcontent">
+                <input type="button" value="Login" name="Login" id="button1">
+                <input type="button" value="Logout" name="Logout" id="button2">
+                <img src="img/cart.png" alt="Cart Image" id="cart">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="last">Home</a></li>
+            </ul>
+        </nav>
+        <div id="slider">
+            <img src="img/img1.jpg" alt="Background" id="carusol">
+        </div>
+            <div id="slidernavigators">
+            <span id="prev" onclick="move(-1)">&#10094;</span>
+            <span id="dots">
+                <span onclick="point(1)"></span>
+                <span onclick="point(2)"></span>
+                <span onclick="point(3)"></span>
+                <span onclick="point(4)"></span>
+            </span>
+            <span id="next" onclick="move(1)">&#10095;</span>
+            </div>
+            <div id="counting">
+
+            </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

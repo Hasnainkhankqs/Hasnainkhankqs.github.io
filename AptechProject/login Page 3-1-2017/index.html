@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>WELCOME TO NEW WORLD</h1>
+        <form  id="signup">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" required="required"><br />
+            <label for="fname">Father Name:</label><br />
+            <input type="text" id="fname" required="required"><br />
+            <label for="cntct">Contact:</label><br />
+            <input type="tel" id="cntct" required="required"><br />
+            <label for="pswrd">Passward:</label><br>
+            <input type="password" id="pswrd" required="required"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" required="required"><br>
+            Gender:<br>
+            <label for="male">Male:</label><input type="radio" id="male" name="gender">
+            <label for="female">Female</label><input type="radio" name="gender" id="female"><br>
+            <input type="submit" value="Sign Up" id="signupbtn">
+         </form>
+         <form   id="signin">
+             <label for="inemail" >Email:</label><br>
+             <input type="email" id="inemail" value="hasnainkhan@gmail.com"><br>
+             <label for="inpswrd">Passward</label><br>
+             <input type="password" id="inpswrd" value="aptech"><br>
+             <input type="button" value="Sign In" id="signinbtn" onClick="login()">
+         </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
