@@ -26,7 +26,7 @@ body{
 	margin:0px;
 	padding:10px;
     color:white;
-    font-size: 40px;
+    font-size:14px;
 	background-color:#4b71ad;
 }
 
@@ -37,14 +37,13 @@ body{
     visibility: none;
 }
 form{
-    font-size: 20px;
+    font-size:14px;
 }
 input{
 	margin-top:10px;
 	margin-bottom:10px;
 	padding:5px;
-	font-size:25px;
-	color:#777;
+	font-size:14px;	color:#777;
 	transition:all 0.5s;
 	font-family:san "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -57,32 +56,9 @@ input:focus{
     float: left;
     color:white;
     padding: 40px;
-	font-size:30px;
-}
-#signin{
-	font-size:30px;
-    background: #198882;
-    color:white;
-    float: right;
-    padding: 60px;
-}
-#signinbtn{
-	width:95px;
-	height:40px;
-	border:1px solid lightseagreen;
-	border-radius:25px;
-	background:none;
-	color:#fff;
-	font-size:20px;
-	padding:10px;
-	margin-top:10px;
-	transition:all 0.3s;
-	cursor:pointer;
-}
-#signinbtn:hover{
-	color:#198882;
-	background:#fff;
-}
+	font-size:14px;}
+
+
 #signupbtn{
 	width:95px;
 	height:40px;
@@ -90,7 +66,7 @@ input:focus{
 	border-radius:25px;
 	background:none;
 	color:#fff;
-	font-size:20px;
+	font-size:14px;	
 	padding:10px;
 	margin-top:10px;
 	transition:all 0.3s;

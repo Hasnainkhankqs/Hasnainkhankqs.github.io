@@ -23,7 +23,6 @@ header{
     height: 80px;
 }
 input[type="search"]{
-    /*height: 1px;*/
     width:400px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -39,20 +38,6 @@ input[type="search"]:focus{
     flex-grow: 1;
 }
 
-/*@font-face {
-    font-family: myfont;
-     src: url(fonts/myfont.ttf);
-}
-#heading{
-    position: relative;
-    top:10px;
-    font-family: myfont;
-    display: inline-block;
-    color:#f89c0f;
-    letter-spacing: 2px;
-    font-size: 3em;
-    text-shadow: 0.5px 0.5px 1px black;
-}*/
 #cart{   
     width: 40px;
     height: 40px;
@@ -114,7 +99,7 @@ input[type="search"]:focus{
    background-color:#cb5901;
 }
 /*header buttons end*/
-/* Slider start */
+/* Navigation start */
 nav>ul{
     list-style-type: none;
     background: #553300;
@@ -139,7 +124,7 @@ nav a:active{
     transition: none;
     background-color:#cb5901;
 }
-
+/* Navigation ended and slider start*/
 #slider{
     width:100%;
     height: 200px;
@@ -186,9 +171,49 @@ nav a:active{
     width:100%;
     height: 200px;
 }
-#counting{
-    width: 50px;
-    height: 50px;
+/* Slider ended and product container start */
+#products{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-around;*/
     color:white;
-    background: black;
+    text-align: center;
+}
+figure{
+    background-color:lightcoral;
+}
+figure>img{
+    padding: 10px;
+    width:300px;
+    height: 300px;
+    cursor: pointer;
+}
+figure>img:hover figure{
+    background-color: green;
+}
+figcaption{
+    background-color: lightseagreen;
+}
+aside{
+    align-self: flex-start;
+    display: flex;
+   flex-grow : 1;/* // this means that the div will grow in same proportion as the window-size*/
+flex-shrink : 1; /*// this means that the div will shrink in same proportion as the window-size */
+flex-basis : 0; /*// this means that the div does not have a starting value as such and will take up screen as per the screen size available for.e.g:- if 3 divs are in the wrapper then each div will take 33%.*/
+    flex-wrap: wrap;
+}
+aside>figure{
+
+}
+section{
+    justify-content: space-around;
+    align-self: flex-start;
+    flex-grow: 2;
+    background-color:lime;
+    display: flex;
+    flex-wrap: wrap;
+}
+section>figure
+{
+    background-color:lightsalmon;
 }
