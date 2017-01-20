@@ -4,20 +4,21 @@
     padding: 0px;
 }
 body{
-    background-image: url("img/img1.jpg");
+    /*background-image: url("img/img1.jpg");
 	background-position:center;
 	background-size:cover;
 	background-attachment:fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background-image: linear-gradient(#222,#777)
 }
 
 header{
     display: flex;
     align-items: center;
-    padding-left:5px;
-    background-image:linear-gradient(#2f2f37,#5d5e60);
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
+    padding: 8px 5px;
 }
-#logo>img{
+#logo img{
     cursor: pointer;
     width: 80px;
     height: 80px;
@@ -28,7 +29,7 @@ input[type="search"]{
     border-bottom-left-radius: 10px;
     outline: 0px;
     border: 0px;
-    transition: 0.4s;
+    transition: 1s;
     font-size: 14px;
     color:black;
     padding: 12px 10px;
@@ -38,22 +39,18 @@ input[type="search"]:focus{
     flex-grow: 1;
 }
 
-#cart{   
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    margin-right: 10px;
-}
 /*header buttons Start*/
-#rightcontent{
-    margin-left: auto;
+#rightcontentbtn{
+    margin-left: auto;  /* it move the rightcontent btn to most right*/
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-#button1,#button2{  
+#signinbtn,#signupbtn{  
+    font-family: sans-serif;
+    text-decoration: none;
     text-align: center;
-    margin-left:10px;
+    margin-right:5px;
     color:white;
     background: none;
     letter-spacing: 1px;
@@ -66,11 +63,10 @@ input[type="search"]:focus{
     border:1px solid #9c4040;
     cursor: pointer;
     border-radius: 10px;
-    transition: 0.4s all ;
-    
+    transition: 0.4s all;
+    padding: 9px;
 }
 #searchbtn{
-    margin-right: auto;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
@@ -88,25 +84,32 @@ input[type="search"]:focus{
     margin-right:4px;
     transition: 0.4s all ;
 }
-#button1:hover,#button2:hover,#searchbtn:hover{
+#signinbtn:hover,#signupbtn:hover,#searchbtn:hover{
     color:#ff5f00;
     background: #fca204;
     border:0px;
 }
-#button1:active,#button2:active,#searchbtn:active{
+#signinbtn:active,#signupbtn:active,#searchbtn:active{
     transition: none;
    color:white;
    background-color:#cb5901;
+   border:0px;
+}
+#cart{   
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 /*header buttons end*/
 /* Navigation start */
 nav>ul{
     list-style-type: none;
-    background: #553300;
+    background-color: rgb(64, 55, 64);
     display: flex;
     justify-content: center;
+    color:#ccc;
 }
-
 
 nav>ul>li>a{
     font-size: 14px;
@@ -117,12 +120,15 @@ nav>ul>li>a{
     text-decoration: none;
     transition: 0.4s;
 }
-nav a:hover{
+nav>ul>li>a:hover{
     background-color:#e78402;
+    color:#222;
+    text-shadow: 0.5px 0.3px 0.5px #fff;
 }
-nav a:active{
+nav>ul>li>a:active{
     transition: none;
     background-color:#cb5901;
+    color:#222;
 }
 /* Navigation ended and slider start*/
 #slider{
@@ -138,11 +144,17 @@ nav a:active{
     padding: 80px 20px;
     cursor: pointer;
     user-select: none;
-    
 }
 
 #prev:hover,#next:hover{
-    background-color: rgba(222, 222, 222, 0.5)
+    background-color: rgba(222, 222, 222, 0.5);
+    color:#222;
+}
+#prev:hover,#prev:active{
+    box-shadow: 2px 0px 10px black;;
+}
+#next:hover,#next:active{
+    box-shadow: -2px 0px 10px black;;
 }
 #slider>img{
     width:100%;
@@ -164,7 +176,7 @@ nav a:active{
 }
 #slidernavigators{
     position: absolute;
-    top:132px;
+    top:146px;
     display: flex;
     justify-content: space-between;
     align-items: center;
