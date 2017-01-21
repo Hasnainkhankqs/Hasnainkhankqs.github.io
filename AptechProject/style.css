@@ -229,3 +229,6 @@ section>figure
 {
     background-color:lightsalmon;
 }
+#hidetxt{
+    transition: 0.5s all;
+}
