@@ -4,6 +4,9 @@ var dot = document.getElementById("dots");
 var dots = dot.getElementsByTagName("span");
 var figure = document.getElementsByTagName("figure");
 var imgp = document.getElementById("products").getElementsByTagName("img");
+var hidetxt = document.getElementById("hidetxt");
+// hidetxt.style.color = "white";   
+var inputfield = document.getElementById("inputfield");
 // setInterval(move,1000);  //setInterval is not working after for loop
 for(var b = 0 ; b < imgp.length ; b++){
     imgp[b].addEventListener("mouseenter",enterr)
@@ -36,5 +39,14 @@ function move(n){
     img.src = "img/img"+count+".jpg";
 }
 
-
+inputfield.addEventListener("focus",focs);
+inputfield.addEventListener("blur",blr);
+function focs(){
+    hidetxt.style.display = "none";
+    hidetxt.style.transition = "0.1s all"
+}
+function blr(){
+    hidetxt.style.color = "white";
+    hidetxt.style.display = "block";
+}
 
