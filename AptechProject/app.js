@@ -2,26 +2,8 @@ var count = 1;
 var img = document.getElementById("carusol");
 var dot = document.getElementById("dots");
 var dots = dot.getElementsByTagName("span");
-var figure = document.getElementsByTagName("figure");
-var imgp = document.getElementById("products").getElementsByTagName("img");
-var hidetxt = document.getElementById("hidetxt");
-// hidetxt.style.color = "white";   
-var inputfield = document.getElementById("inputfield");
-// setInterval(move,1000);  //setInterval is not working after for loop
-for(var b = 0 ; b < imgp.length ; b++){
-    imgp[b].addEventListener("mouseenter",enterr)
-}
-for(var a = 0 ; a < imgp.length ; a++){
-    imgp[a].addEventListener("mouseleave",leavee)
-}
-function enterr(){
-this.parentNode.style.backgroundColor = "red";
-}
-function leavee(){
- this.parentNode.style.backgroundColor = "green";
-}
 function point(l){
- img.src = "img/img"+l+".jpg";
+ img.src = "img/slider/img"+l+".jpg";
 }
 function move(n){
     if(n){
@@ -36,17 +18,18 @@ function move(n){
     else if(count < 1){
      count = 4;
     }
-    img.src = "img/img"+count+".jpg";
+    img.src = "img/slider/img"+count+".jpg";
 }
 
-inputfield.addEventListener("focus",focs);
-inputfield.addEventListener("blur",blr);
-function focs(){
-    hidetxt.style.display = "none";
-    hidetxt.style.transition = "0.1s all"
-}
-function blr(){
-    hidetxt.style.color = "white";
-    hidetxt.style.display = "block";
-}
+setInterval(move,3000); 
 
+
+// map start
+    var mapCanvas = document.getElementById("map");
+    function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(24.9018300,67.0405020),
+        zoom: 10
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}

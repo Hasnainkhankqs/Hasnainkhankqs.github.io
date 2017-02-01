@@ -81,64 +81,13 @@ header{
     color:#222;
 }
 /*search div start*/
-/*slider start*/
-#slider{
-    float: left;
-    width:100%;
-    height: 200px;
-    user-select: none;
-}
-#prev,#next{
-    background-color:none;
-    color:#ccc;
-    font-size: 30px;
-    padding: 80px 20px;
-    cursor: pointer;
-    user-select: none;
-}
 
-#prev:hover,#next:hover{
-    background-color: rgba(222, 222, 222, 0.5);
-    color:#222;
-}
-#prev:hover,#prev:active{
-    box-shadow: 2px 0px 10px black;;
-}
-#next:hover,#next:active{
-    box-shadow: -2px 0px 10px black;;
-}
-#slider>img{
-    width:100%;
-    height: inherit;
-}
-#dots span{
-    display: inline-block;
-    width:15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color:white;
-    margin-left: 5px;
-    cursor: pointer;
-    user-select: none;
-}
-#dots{
-    align-self: flex-end;
-}
-#slidernavigators{
-    position: absolute;
-    top:152px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:100%;
-    height: 200px;
-}
-/* Slider ended and nav start */  
 /*navigation bar satrted*/
 nav{ 
+    
     display: inline-block;
      background-image: url("img/nav.jpg");
-      background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width:100%;
@@ -208,86 +157,24 @@ nav>ul>li>a:hover{
 /*navbar Ended*/
 /*main body*/
 main{
+    float: left;
     background-image: url("img/aside.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-/*Aside start*/
-aside{
-    float: left;
-    width:30%;
-    position: relative;
-    top:-4px;
-}
-aside h1{
-    font-size: 35px;
-    font-family: serif;
-    color:#fff;
-    margin:10px;
-    position: relative;
-    left:0px;
-    transition: 0.5s;
-}
-aside h1:hover{
-    left:10px;
-}
-aside>ul{
+main h1{
     margin: 0px;
-}
-aside>ul>li{
-    margin:30px;
-    color:lightseagreen;
-    position: relative;
-    left:0px;
-    transition: 0.5s;
-    width:100px;
-    
-}
-aside>ul>li:hover{
-    left:10px;
-    color:#37d4cb;
-}
-aside>ul>li:hover a{
-    text-decoration: underline;
-}
-aside>ul>li>a{
-    text-decoration: none;
-    color:#fff;
-    font-size: 20px;
-}
-h1>img{
-    width: 30px;
-    margin-right:10px;
-}
-article{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width:70%;
-    border-left:1px dashed black;
-    
-}
-article>section{
-    background-image: url("img/background.jpg");
-    padding: 10px;
-    width:45%;
-    margin: 10px;
     text-align: center;
+    font-size: 50px;
+    text-shadow: 0.5px 0.5px 0.5px #fff;
+    color:black;
 }
-article>section>a>img{
-    width:100%;
+/*imagesgroup  start*/
+section{
+     background-image: url("img/background.jpg");
 }
-section>span{
-    /*background: red;*/
-    color:white;
-
-}
-section>div>span{
-    position: absolute;
-    top:10px;
-}
-section span input{
+section input{
     width:100px;
     height: 30px;
     outline: 0px;
@@ -299,18 +186,26 @@ section span input{
     text-shadow: 0.5px 0.5px 0.5px black;
     border-radius: 25px;
 }
-section span input:active{
+section input:active{
     background-image: linear-gradient(#63ccbe,#0c544f);
 }
-/*map start*/
-#map{
+#imagesgroup{
+    float: left;
     width:100%;
-    height:300px;
-    background:yellow;
+}
+#imagesgroup section{
+    float: left;
+    width:30%;
+    margin: 10px;
+    padding: 10px;
+    color:#fff;
+    text-align: center;
+}
+#imagesgroup section a img{
+    width: 100%;
 }
 /*footer start*/
 footer{
-    /*height: 300px;*/
     text-align: center;
     width:100%;
     background: #171616;
