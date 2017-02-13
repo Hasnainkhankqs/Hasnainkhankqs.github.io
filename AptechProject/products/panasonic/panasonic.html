@@ -1,97 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
     <link rel="icon" href="img/logo.png">
     <title>Liberty Electronic</title>
 </head>
+
 <body>
     <div id="container">
         <header>
             <div id="logo">
+
                 <img src="img/logo.png" alt="Logo Image">
                 <h1>Liberty Electronics</h1>
             </div>
-            <div id="search">
-                <label for="stext">Search:</label>
-                <input type="text" id="stext">
+            <div id="signupsignin">
+                <a href="#"><input type="button" id="signin" value="Sign In"></a>
+                <a href="#"><input type="button" id="signup" value="Sign Up"></a>
             </div>
         </header>
+        <div id="slider">
+            <!--Slider start -->
+            <img src="img/slider/img1.jpg" alt="Background" id="carusol">
+        </div>
+        <div id="slidernavigators">
+            <span id="prev" onclick="move(-1)">&#10094;</span>
+            <span id="dots">
+                <span onclick="point(1)"></span>
+            <span onclick="point(2)"></span>
+            <span onclick="point(3)"></span>
+            <span onclick="point(4)"></span>
+            </span>
+            <span id="next" onclick="move(1)">&#10095;</span>
+        </div>
+        <!-- slider ended <-->
         <nav>
-			<ul>
-				<li class="hide"><a href="../../index.html">Home</a></li>
-				<li class="hide"><a href="#">About Us</a></li>
-				<li class="hide"><a href="#">Contact Us</a></li>
-				<li class="hide"><a href="#">Catagories</a>
-				<ul class="nested">
-				<li><a href="#">Mobiles</a></li>
-				<li><a href="#">Laptops</a></li>
-				<li><a href="#">Screens</a></li>
-				<li><a href="#">Cameras</a></li>
-				</ul>
-				</li>
-			</ul>
-		</nav>
+            <ul id="makeactivebar">
+                <li class="hide"><a href="#">Home</a></li>
+                <li class="hide"><a href="#">About Us</a></li>
+                <li class="hide"><a href="#">Contact Us</a></li>
+                <li class="hide" id="navpaneopener"><a href="#">All Products</a></li>
+                <li class="hide"><a href="#">Catagories</a>
+                    <ul class="nested">
+                        <li><a href="catagaries/mobiles/mobile.html">Mobiles</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Screens</a></li>
+                        <li><a href="#">Cameras</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <main>
-            <h1>Panasonic</h1>
-            <div id="imagesgroup">
-            <section>
-                <a href="#"><img src="img/panasonic/1.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
-            <section>
-                <a href="products/panasonic/panasonic.html"><img src="img/panasonic/2.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>            </section>
-            <section>
-                <a href="#"><img src="img/panasonic/3.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
-            <section>
-                <a href="#"><img src="img/panasonic/4.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
-            <section>
-                <a href="#"><img src="img/panasonic/5.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
-            <section>
-                <a href="#"><img src="img/panasonic/6.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
-            <section>
-                <a href="#"><img src="img/panasonic/7.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
-            <section>
-                <a href="#"><img src="img/panasonic/8.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
-            <section>
-                <a href="#"><img src="img/panasonic/9.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
-            <section>
-                <a href="#"><img src="img/panasonic/10.jpg" alt="img"></a>
-                <span>Product Name:Iron<br>Brand:Panasonic<br>Price:5000/=<br><input type="button" value="Shop Now"></span>
-            </section>
+            <aside>
+                <ul>
+
+                    <span id="brand">
+                    <img src="img/arrow.png" alt="img">
+                    <h1>BRANDS</h1>
+                </span>
+                    <li><a href="#">Apple</a><br/> (10 producs)
+                    </li>
+                    <li><a href="#">Canon</a><br/> (10 producs)
+                    </li>
+                    <li><a href="#">Dany</a><br/> (8 producs)
+                    </li>
+                    <li><a href="#">Dell</a><br/> (10 producs)
+                    </li>
+                    <li><a href="#" id="echostar">Eco Star</a><br/>
+                        <!-- here is page links-->
+                        (7 producs)
+                    </li>
+                    <li><a href="#">Hp</a><br/> (7 producs)
+                    </li>
+                    <li><a href="#">Orient</a><br/> (10 producs)
+                    </li>
+                    <li><a href="#">Panasonic</a><br/> (10 producs)
+                    </li>
+                    <li><a href="#">Pell</a><br/> (4 producs)
+                    </li>
+                    <li><a href="#" id="sony">Sony</a><br/> (8 producs)
+                    </li>
+                </ul>
+            </aside>
+            <article>
+                <h1 class="brandname">Panasonic</h1>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic1.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic1.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic2.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic2.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic3.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic3.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic4.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic4.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic5.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic5.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic6.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic6.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic7.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic7.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic8.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic8.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic9.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic9.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic10.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic10.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelcontainer">
+                    <img src="img/panasonic/panasonic11.jpg" alt="Image" class="clicking">
+                    <div class="model">
+                        <div class="model-content">
+                            <span class="closebtn modelspan">&times</span>
+                            <div>
+                                <img src="img/panasonic/panasonic11.jpg" alt="Image">
+                                <span class="detail">
+                                    <a href="#" class="detailfile">Detail Fail</a>
+                                    <a href="#" class="shopnow">Shop Now</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </article>
+            <span id="navpane">
+            <span class="closebtn">&times</span>
+            <div id="listcontainer">
+                <div class="switchbtn">Panasonic</div>
+                <ul class="list">
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+                <div class="switchbtn">Panasonic</div>
+                <ul class="list">
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+                <div class="switchbtn">Panasonic</div>
+                <ul class="list">
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+                <div class="switchbtn">Panasonic</div>
+                <ul class="list">
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
             </div>
+            </span>
         </main>
-        
+        <!--map start-->
+        <div id="map"><img src="map.png" alt=""></div>
+        <!--map end-->
         <footer>
             <ul>
                 <li><a href="#">Panasonic</a></li>
                 <li><a href="#">Panasonic</a></li>
                 <li><a href="#">Panasonic</a></li>
                 <li><a href="#">Panasonic</a></li>
+                <li><a href="products/panasonic/panasonic.html">panasonicunique</a></li>
                 <li><a href="#">Panasonic</a></li>
                 <li><a href="#">Panasonic</a></li>
                 <li><a href="#">Panasonic</a></li>
                 <li><a href="#">Panasonic</a></li>
-                <li><a href="#">Panasonic</a></li>
-                <li><a href="#">Panasonic</a></li>
-                <li><a href="#">Panasonic</a></li>
+                <li><a href="#sony">Sony</a></li>
+                <li><a href="#echostar">ecostar</a></li>
+                <!-- here is page to link-->
                 <li><a href="#">Panasonic</a></li>
                 <li><a href="#">Panasonic</a></li>
                 <li><a href="#">Panasonic</a></li>
@@ -114,24 +338,17 @@
             </ul>
             <hr>
             <div id="links">
-            <a href="#"><img src="img/facebook.png" alt="img"></a>
-            <a href="#"><img src="img/twitter.png" alt="img"></a>
-            <a href="#"><img src="img/gmail.png" alt="img"></a>
+                <a href="#"><img src="img/facebook.png" alt="img"></a>
+                <a href="#"><img src="img/twitter.png" alt="img"></a>
+                <a href="#"><img src="img/gmail.png" alt="img"></a>
             </div>
             <span>This website is &copy; Each and every words are reserved by Liberty Electronic</span>
         </footer>
     </div>
-    <script src="app.js">
+    <script src="../../app.js">
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
