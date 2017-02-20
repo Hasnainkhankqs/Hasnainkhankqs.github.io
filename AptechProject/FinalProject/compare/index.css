@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image:url(8L7bKo.jpg);}
+	
+.box1{
+	background-image:url(../img%204.jpg);
+	border:1px solid grey;
+	height:1015px;
+	width:500px;
+	margin-left:80px;
+	margin-top:50px;}	
+	
+.box2{
+		background-image:url(../img%204.jpg);
+	border:1px solid grey;
+	height:1015px;
+	width:500px;
+	margin-left:550px;
+	margin-top:-770px;
+	float:left;}
+		
+.haeir{
+	
+	height:40px;
+	width:210px;
+	margin-left:140px;
+	margin-top:10px;
+	background-image:url(texture-abstract-background-colors-wallpaper-11.jpg);
+	box-shadow:0px 1px 1px 1px white;
+	;}		
+.text{
+	color:#FF0;
+	float:left;
+	margin-left:60px;
+	margin-top:3px;
+	font-family:"Courier New", Courier, monospace;}
+
+
+
+
+.content1{
+	border:1px solid grey;
+	height:200px;
+	width:450px;
+	float:left;
+	margin-left:-115px;
+	box-shadow:0px 1px 1px 1px grey;}
+span{
+	color:#F60;
+	font-size:25px;}
+.haiertext{
+ color:#FC6;
+ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif}			
+		
+#bx1{
+	border:1px solid grey;
+	background-color:#000;
+	height:28px;
+	width:480px;
+	float:left;
+	margin-top:10px;
+	margin-left:-16px;
+    box-shadow:0px 1px 1px 1px grey;}
+.intext{
+	color:#CCC;
+	margin-top:5px;
+	}			

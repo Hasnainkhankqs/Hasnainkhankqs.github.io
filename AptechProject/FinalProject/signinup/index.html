@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>SignIn</title>
+</head>
+
+<body>
+    <input type="button" value="Sign Up">
+    <div id="signincontainer" id="open">
+        <span class="overlap">Sign In</span>
+        <form action="../index.html" onsubmit="return login()" id="loginform">
+        <label for="username">UserName:</label><br />
+        <input type="text" placeholder="i.e. Hasnainkhankqs" id="loginname"><br />
+        <label for="password">Password</label><br />
+        <input type="password" placeholder="*****" id="loginpass"><br/>
+        <input type="submit" value="Sign In">
+        </form>
+    </div>
+    <span id="errormsg2">
+         
+        </span>
+        <div id="welcome">
+             World's most visited Electronic e-commerce
+             website...
+             <p>
+                 Sign in for more functionality 
+                 make your account free.
+                </p> 
+                <div id="attractive">
+                    <div class="blackborder"><img src="../img/main/1dell.jpg" alt=""></div>
+                    <div class="blackborder"><img src="../img/main/3-Or.jpg" alt=""></div>
+                    <div class="blackborder"><img src="../img/main/5-con.jpg" alt=""></div>
+                    <div class="blackborder"><img src="../img/main/alcatel.jpg" alt=""></div>
+                    <div class="blackborder"><img src="../img/main/canon.jpg" alt=""></div>
+                    <div class="blackborder"><img src="../img/main/d1.jpg" alt=""></div>
+                    <div class="blackborder"><img src="../img/main/hp6.jpg" alt=""></div>
+                    <div class="blackborder"><img src="../img/main/dawlance.jpg" alt=""></div>
+                     <div class="blackborder"><img src="../img/main/pell.jpg" alt=""></div>
+                    
+                </div>
+        </div>
+
+    <div id="signupcontainer">
+        <span class="overlap">Sign Up</span>
+        <form action="../index.html" onsubmit="return validate()">
+            <label for="name">UserName:</label><br />
+            <input type="text" id="name" ><br />
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" ><br>
+            <label for="cntct">Contact:</label><br />
+            <input type="text" id="contact" ><br />
+            <label for="pswrd">Passward:</label><br>
+            <input type="password" id="password" ><br>
+            
+           <label> Gender:</label><br>
+            <label class="inlinelabel"><input type="radio" name="gender" id="male">Male:</label>
+            <label  class="inlinelabel"><input type="radio" name="gender" id="female">Female:</label><br>
+            <input type="submit" value="Sign Up" id="signup">
+        </form> 
+    </div>
+        <span id="errormsg">
+            
+        </span>
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>

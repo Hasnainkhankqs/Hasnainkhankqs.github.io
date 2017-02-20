@@ -1,0 +1,39 @@
+Haier:
+
+			
+cooling system:	No Frost
+refrigerant:	R134a
+total net capacity(l):	521
+net refrigerator capacity(l):	343
+net freezer capacity(l):	178
+unit dimension(H*W*D)MM:	1780x910x730
+Door hinge:	Side-by-Side
+Main color of product:	VCM SS
+Technical specs			
+climate class:	T
+Voltage (V):	187V~252V
+Frequency (Hz):	50
+temperature of refrigerator:	0?~7?
+temperature of freezer:	=-18?
+fast cooling:	Yes
+
+
+Pel:
+
+Operating Current
+1.3 A
+GENERAL SPECIFICATIONS AND FEATURES
+Display Type
+Double Door
+Color
+Silver
+Capacity
+420 L
+REFRIGERATOR INFO
+Number of Doors
+2
+Convenience Features
+Bottle Snugger
+DIMENSIONS
+Weight
+75 Kg
