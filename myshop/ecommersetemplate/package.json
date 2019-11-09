@@ -1,0 +1,20 @@
+{
+  "name": "ecommersetemplate",
+  "version": "1.0.0",
+  "description": "A template for ecommerse website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch node_modules/bootstrap/scss -o src/css",
+    "scss2": "node-sass --watch src/sass -o src/css"
+  },
+  "keywords": [
+    "Ecommerse"
+  ],
+  "author": "hasnain Khan",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "node-sass": "^4.5.3"
+  }
+}

@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    background-image: url("img/img7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height: 894px;
+    letter-spacing: 2px;
+    padding-top:300px;
+    text-align: center;
+    color:#fff;
+    font-size: 30px;
+}
+
+#sec1{
+    width:100%;
+    padding: 50px;
+}
+#sec1 img{
+    margin-right: 40px;
+    width:45%;
+    height: 350px;
+    float: left;
+}
+#sec1 h1{
+    font-size: 23px;
+}
+#sec1 p{
+    font-size: 13px;
+    color: #777777;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    width:957px;
+}
+#img1content{
+    margin-top:50px;
+}
+#sec2{
+    clear: both;
+    width:100%;
+    height: 300px;
+    display: block;
+    background-color: #f6f6f6;
+}
+#sec2 h3{
+    color:#a8a8a8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+p{
+    color:#777777;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+.sec2span{
+    display: block;
+    width:20%;
+    /*height: 100%;*/
+    /*display: inline-block;*/   /*with this the contect was not comming in center*/
+    /*background-color:lightcoral;*/
+    float: left;
+    text-align: center;
+    margin: 100px 2.5%;
+}
+.sec2span img{
+    clear: both;
+    display: inline-block;
+    width:40px;
+    height: 40px;
+
+}
+.sec2span span{
+    float: left;
+    /*background-color: #333;  What the error is .. .when i am omating float then background-color not working*/    
+    color:#ccc;
+    width:100%;
+    text-align: center;
+    padding-top:30px;
+}
+#centralnav{
+    clear: both;
+    text-align: center;
+}
+#centralnav span{
+    display: block;
+    font-size: 30px;
+    color:#333;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+}
+#centralnav a {
+    display: inline-block;
+    text-decoration: none;
+    color:#a8a8a8;
+    padding-top:20px;
+    margin-right: 10px;
+}
+#protfolioimg{
+    margin: auto;
+    width:80%;
+    height: 360px;
+}
+#protfolioimg img{
+    float: left;
+    margin:20px;
+    width:45%;
+    height: 100%;
+}
+#protfolioimg img{
+    box-shadow: 35px 31px 68px -5px rgba(0,0,0,0.27);
+    transition: 0.5s;
+}
+#protfolioimg img:hover{
+    cursor: pointer;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
+}
+#blog{
+    float: left;
+    width: 100%;
+    height: 863px;
+    background-color:#f6f6f6;
+    text-align: center;
+    margin-top:100px;
+    padding-top:100px;
+}
+#blog h1{
+    text-transform: uppercase;
+}
+#blog span{
+    display: block;
+    margin-top:10px;
+     color:#a8a8a8;
+}
+#blogimg{
+    width:100%;
+    height: 500px;
+    margin-top:50px;
+}
+#blogimg .blogimgspan{
+    float: left;
+    width:28%;
+    margin:25px;
+}
+#blogimg .blogimgspan img{
+    width:100%;
+    height: 340px;
+}
+#blogimg h2{
+    color:#333;
+}
+.date{
+    color:#d2cdcd !important;
+}
+.readmore{
+    text-transform: uppercase;
+    padding: 15px 40px;
+    color:#333;
+    outline: 0px;
+    background-color:#fff;
+    border-radius: 25px;
+    border:1px solid #333;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.readmore:hover{
+    color:#fff;
+    background-color:black;
+    cursor: pointer;  
+}
+#contact{
+    clear: both;
+    text-align: center;
+    height: 500px;
+    width:100%;
+    padding-top:90px;
+}
+#contact h1{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+#contact span{
+        color: rgb(168, 168, 168);;
+}
+#contactimg{
+    width:100%;
+    height: 150px;
+    margin-top:60px;
+}
+#contactimg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.contactimg{
+    width:150px;
+    float: left;
+    margin-left:160px;
+}
+
+.contactimg span{
+    clear: both;
+}
+
+#contactimg1{
+    margin-left: 298px;
+}
+form{
+    margin-top:10px;
+}
+form input[type="text"],form  input[type="email"],form  textarea{
+        border: none;
+    border-bottom: 1px solid #dfdfdf;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    outline: none;
+}
+form input[type="text"],form  input[type="email"]{
+    width:25%;
+    font-size: 20px;
+}
+form  textarea{
+    width:50%;
+    margin-top: 10px;
+}
+form input[type="submit"]{
+    padding: 15px 70px;
+    margin-top:20px;
+}
+footer{
+    margin-top:60px;
+    width:100%;
+    padding: 90px 0px;
+    background-color: #000;
+    color:#ccc;
+}
+footer img{
+    text-align: center;
+    width:20px;
+    height: 20px;
+    margin-left: 8px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+/*nav{
+    float: left;
+    width:100%;
+    background-color: #f6f6f6;
+    display: block;
+    text-align: center;
+    height: 100px;
+    margin-bottom: 40px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+nav ul{
+    padding-top:30px;
+    float:right;
+    padding-right: 20px;
+    list-style-type: none;
+}
+nav ul li{
+    clear: both;
+    width:100%;
+    display: block;
+}
+nav a{
+    text-decoration: none;
+    color:#aaa;
+}
+nav span{
+
+    width:200px;
+    float: left;
+    padding-top:30px;
+    font-size: 25px;
+    color:#505050;
+    font-weight: 600;
+}*/
+        nav{
+            margin-top:30px;
+            width:100%;
+          margin-bottom: 20px;
+    display: block;
+    margin-bottom: 80px;
+          
+        }
+       nav  ul{
+    z-index: 100;
+            margin-top:10px;
+            float: left;
+            position: relative;
+            left:50%;
+            padding: 0px;
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+      nav  li{
+            float: left;
+            position: relative;
+            right: 50%;
+        }
+      nav  a{
+
+            padding: 20px 40px ;
+            color:#333;
+            background-color: #f6f6f6;
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        .fixed{
+            float: left;
+            position: fixed;
+            top:0px;
+        }
+.allimg{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+.effect{
+    opacity: 1;
+    transform: translateY(0px);
+}
+#blogheading{
+    transition: 0.5s;
+}
+.blogheadingbig{
+    font-size: 90px;
+    color:#ccc;
+}

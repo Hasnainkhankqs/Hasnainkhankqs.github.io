@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #2a606c;
+}
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#imgdiv{
+    background-image: url("ss.jpg");
+    background-size: cover;
+    height: 500px;
+
+}
+#blur{
+    background: rgba(0,0,0,0.6);
+    height: 500px;
+}
+header{
+    font-weight: bold;
+    width:80%;
+    margin:auto;
+    height: 60px;
+    background-color: rgba(41,95,107,0.1);
+    padding-top:18px;
+}
+header span{
+    color:#b4d0d3;
+    margin-left:10px;
+    display: inline;
+}
+header ul{
+    text-align: right;
+    padding-right: 20px;
+   list-style-type: none;
+   float: right;
+   color:#b4d0d3; 
+}
+header li{
+    float: left;
+    margin-right: 10px;
+}
+#txt{
+    color:#b4d0d3;
+    text-align: center;
+    margin-top:140px;
+}
+#txt div{
+    border:1px solid #b4d0d3;
+    font-size: 18px;
+    display: inline-block;
+    margin:auto;
+    padding: 10px;
+    margin-top:10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#txt h2{
+    font-size: 17px;
+    line-height: 30px;
+}
+#square{
+    width:80%;
+    height: 600px;
+    margin:auto;
+}
+.box{
+    width:50%;
+    height: 50%;
+    float: left;
+    position: relative;
+    top:-50px;
+}
+.box1{
+    background-color:#e84c3d;
+}
+.box2{
+    background-color:#fdbd1f;
+}
+.box3{
+    background-color:#1bbc9b;
+}
+.box4{
+    background-color:#9a57b4;
+}
+footer{
+       color: #fff;
+}
+/*footer h1{
+    font-size: 12px;
+
+}
+footer h2{
+    font-size: 16;
+}*/
+footer h1,footer h2{
+    text-align: center;
+
+    line-height: 50px;
+}
+@media (max-width: 626px){
+header{
+    padding-top: 8px;
+}
+header span{
+    display: block;
+    width:100%;
+    text-align: center;
+    margin-left: 0px;
+}
+header ul{
+    text-align: center;
+    width:100%;
+   clear:both;
+   margin-top:5px;
+   padding-left: 25%;
+}
+
+#square{
+    width:80%;
+    height: 400px;
+    margin:auto;
+}
+#txt h1{
+    font-size: 20px;
+}
+#txt h2{
+    font-size: 15px;
+}
+#txt div{
+    padding: 10px;
+    font-size: 12px;
+}
+footer h1{
+    font-size: 18px;
+}
+footer h2{
+    font-size: 12px;
+}
+}

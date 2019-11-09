@@ -1,0 +1,119 @@
+img {
+  height: 100px;
+  width: 100px; }
+
+.button1 {
+  font-family: "Roboto";
+  border: 0;
+  outline: 0;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0.15em;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-top: 5px; }
+
+.button2 {
+  font-family: "Roboto";
+  border: 0;
+  outline: 0;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0.15em;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #292b2c;
+  background-color: #f0ad4e; }
+
+.button2:hover {
+  transition: 0.5s;
+  background-color: #fff !important; }
+
+.button1 .ripple {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.6s linear; }
+
+@keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0; } }
+
+.dropdown-menu {
+  background-color: #f09300; }
+
+header {
+  background-color: #c77800;
+  color: #fff; }
+
+.abc {
+  color: #f09300;
+  background-color: #f4b400; }
+
+@media (max-width: 576px) {
+  body {
+    background-color: green; }
+    body .setIt {
+      margin-left: -2rem; }
+    body .topmost {
+      padding-bottom: 10px; }
+    body .menu {
+      width: 10rem;
+      margin-bottom: 10px; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  body {
+    background-color: blue; }
+  .setIt {
+    margin-left: -2rem; }
+  .menu {
+    width: 10rem;
+    margin-bottom: 10px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-color: gray; }
+  .menu {
+    width: 10rem;
+    margin-bottom: 10px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-color: #3845AE; } }
+
+.dropdown:hover > .dropdown-menu {
+  top: 36px; }
+
+.menu a {
+  background: orange !important;
+  width: auto;
+  box-shadow: 0px 0px 0px transparent; }
+
+.menu a:hover {
+  -webkit-box-shadow: 15px 5px 40px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 15px 5px 40px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 5px 40px rgba(0, 0, 0, 0.75);
+  position: relative;
+  transition: 0.5s;
+  background: #f4b400 !important; }
+
+.menu {
+  background-color: orange; }
+
+.navbar {
+  padding: 0.1rem 1rem; }
+
+.navbar-brand {
+  height: 56px;
+  width: 89px; }
+  .navbar-brand img {
+    height: 100%; }

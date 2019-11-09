@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Protfolio</title>
     <link rel="stylesheet" href="HomePage/style.css">
+    
 </head>
 <body>
     <div id="wrapper">
+      
         <header>
+        <div id="ip">
+sadf
+        </div>
         <h1>Html<img src="HomePage/img/html.png" alt="Html5 Image" title="Html5 Image"> and 
         Css<img src="HomePage/img/css3.png" alt="css3 Image" title="css3 image"> Templates</h1>
         <h2>Protfolio</h2>
@@ -118,6 +123,7 @@
         <article>  
             Only Home,Page1,page2  Page3 ,table, Facebook ,Google and Aptech First project  links are working... 
         </article>
+        
         <aside >
            <a href="AptechProject/FinalProject/index.html"> Aptech First Project</a>
         </aside>
@@ -125,7 +131,23 @@
 
 
  
-
     </div>
+<script>
+    function getIp(){
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    $ip = $_SERVER['HTTP_CLIENT_IP'];
+} 
+else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} 
+else {
+    $ip = $_SERVER['REMOTE_ADDR'];
+}
+return $ip;
+}
+var a = getIp();
+document.getElementById('ip').innerHTML += "Hasnain";
+document.getElementById('ip').style.background = "red";
+</script>
 </body>
 </html>

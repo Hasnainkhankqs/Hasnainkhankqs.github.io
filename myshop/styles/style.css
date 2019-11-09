@@ -1,0 +1,67 @@
+body{
+    background: lightsalmon;
+}
+.row,.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background: red;
+}
+header div{
+    display: inline-block;
+}
+img{
+    border: 1px solig black;
+}
+aside{
+    background: lightseagreen;
+   
+}
+article{
+    background: lightsalmon !important;
+     padding-left:5% !important; 
+    
+}
+.paddingMarginOff{
+    margin: 0px;
+    padding: 0px;
+}
+.product_thumbnail{
+     height: 250px !important; 
+    background: #617d7f;
+    color:#fff;
+    margin: 20px !important;
+}
+.product_thumbnail img{
+    height:55%;
+}
+figcaption{
+    text-transform: uppercase;
+    color:#fff !important;
+
+}
+/* item detail bar */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
